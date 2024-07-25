@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi-app", "Kiwi-app\Kiwi-app.csproj", "{47FAB33F-F862-4577-BB7D-F8F4BF8CCFEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47FAB33F-F862-4577-BB7D-F8F4BF8CCFEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47FAB33F-F862-4577-BB7D-F8F4BF8CCFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47FAB33F-F862-4577-BB7D-F8F4BF8CCFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47FAB33F-F862-4577-BB7D-F8F4BF8CCFEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2113E228-2D44-41ED-89C1-7E6011D9BD12}
+	EndGlobalSection
+EndGlobal
