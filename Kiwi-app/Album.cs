@@ -12,7 +12,7 @@ namespace Kiwi_app
         public Artist Artist { get; }
         public int ReleaseYear { get; }
         public List<Track> AlbumTracks { get; }
-        public TimeSpan AlbumDuration => TimeSpan.FromSeconds(AlbumTracks.Sum(track => track.TrackDuration.TotalSeconds));
+        public TimeSpan AlbumDuration => TimeSpan.FromSeconds(AlbumTracks.Sum(track => track.Duration.TotalSeconds));
         public List<Genre> TrackGenres { get; }
 
 
