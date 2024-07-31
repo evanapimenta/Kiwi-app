@@ -29,6 +29,10 @@ namespace Kiwi_app
         public int PlaylistCount => AccountPlaylists.Count;
 
 
+        /// <summary>
+        /// Generates a unique user ID to be added to the system, preventing duplicates.
+        /// </summary>
+        /// <returns>A unique ID to be added to the system and linked to an user.</returns>
         private static int GenerateUniqueUserId()
         {
             int newUserId;
