@@ -13,7 +13,7 @@ namespace Kiwi_app
     /// <param name="Artist">The artist associated with the track.</param>
     /// <param name="Album">The album associated with the track.</param>
     /// <param name="Duration">The track's length.</param>
-    /// <param name="TrackGenres">A list of one of more genres that may be associated with a track.</param>
+    /// <param name="TrackGenres">A list of one or more genres that may be associated with a track.</param>
     internal class Track(string Title, Artist Artist, Album Album, TimeSpan Duration, List<Genre> TrackGenres)
     {
         public string Title { get; } = Title ?? throw new ArgumentNullException(nameof(Title), "Track title cannot be null");
