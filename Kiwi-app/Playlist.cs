@@ -76,10 +76,30 @@ namespace Kiwi_app
         /// </summary>
         /// <param name="track">The track to be added to the playlist.</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="track"/>is null.</exception>
-        public void AddTrackToPlaylist(Track track)
+        public static void AddTrackToPlaylist(List<Track> playlist, Track track)
         {
+            if (playlist == null) throw new ArgumentNullException(nameof(playlist), "Playlist cannot be null.");
             if (track == null) throw new ArgumentNullException(nameof(track), "Track cannot be null");
-            if (!PlaylistTracks.Contains(track)) PlaylistTracks.Add(track);
+
+            if (!playlist.Contains(track)) playlist.Add(track);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="playlist">The playlist to which the track will be added by the user.</param>
+        /// <param name="track">The track to be added to a specific playlist.</param>
+        /// <exception cref="ArgumentNullException">Thrown when <paramref name="playlist"/> or <paramref name="track"/> are null.</exception>
+        /// <exception cref="InvalidOperationException">Thrown when the method is called upon a <paramref name="track"/> that does not currently exist in the playlist.</exception>
+        public static void RemoveTrackFromPlaylist(List<Track> playlist, Track track) 
+        {
+            if (playlist == null) throw new ArgumentNullException(nameof(playlist), "Playlist cannot be null.");
+            if (track == null) throw new ArgumentNullException(nameof(track), "Track cannot be null.");
+
+            if (!playlist.Contains(track)) throw new InvalidOperationException("Track not found in the playlist.");
+
+            playlist.Remove(track);
+
         }
     }
 }
