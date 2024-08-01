@@ -70,5 +70,16 @@ namespace Kiwi_app
         {
             return userPlaylistIds.Add(playlistId);
         }
+
+        /// <summary>
+        /// Adds a track to the user's playlist.
+        /// </summary>
+        /// <param name="track">The track to be added to the playlist.</param>
+        /// <exception cref="ArgumentNullException">Thrown when <paramref name="track"/>is null.</exception>
+        public void AddTrackToPlaylist(Track track)
+        {
+            if (track == null) throw new ArgumentNullException(nameof(track), "Track cannot be null");
+            if (!PlaylistTracks.Contains(track)) PlaylistTracks.Add(track);
+        }
     }
 }
