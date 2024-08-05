@@ -30,7 +30,6 @@ namespace Kiwi_app
         public static int GenerateUniqueArtistId()
         {
             int newArtistId;
-            Random random = new();
 
             lock (lockObject)
             {
